@@ -1,6 +1,7 @@
 import React, { useContext} from 'react'
 import { Link } from 'react-router-dom';
 import { Context } from '../Context/Context';
+import './products/products.css'
 
 const ProductCard = (props) => {
 
@@ -27,7 +28,7 @@ const ProductCard = (props) => {
     <div className="pro">
       <Link to="/product" onClick={() => handleClick()}>
         <div className='img-container'>
-        <img src={require('../'+img)} alt="no image"/>
+        <img src={require('./products/'+img)} alt="no image"/>
         </div>
         <div className="des">
             <span>{make}</span>

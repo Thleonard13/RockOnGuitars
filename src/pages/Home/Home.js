@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Hero from './Hero';
-import Products from '../../components/Products';
+import Products from '../../components/products/Products'
 import Services from "../../components/Services/Services"
 import Banner1 from './Banner1';
 import Banner2 from './Banner2';
 import Banner3 from './Banner3';
-import { products } from '../../Utilities/ProductInfo';
+import { products } from '../../data/ProductInfo'
 
 const Home = () => {
   const newArrivals = {

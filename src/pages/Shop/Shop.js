@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Header from '../../components/Header'
-import Products from '../../components/Products'
-import { products } from '../../Utilities/ProductInfo'
+import Header from '../../components/header/Header'
+import Products from '../../components/products/Products'
+import { products } from '../../data/ProductInfo'
 
 const Shop = () => {
 

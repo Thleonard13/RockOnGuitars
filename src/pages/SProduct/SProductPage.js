@@ -1,7 +1,8 @@
 import React from 'react'
-import Products from "../../components/Products"
+import Products from "../../components/products/Products"
 import SProduct from './SProduct'
-import { products } from '../../Utilities/ProductInfo'
+import { products } from '../../data/ProductInfo'
+import './sProduct.css'
 
 const SProductPage = () => {
 

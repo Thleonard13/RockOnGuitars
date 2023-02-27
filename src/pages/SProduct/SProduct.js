@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Context } from '../../Context/Context'
+import './sProduct.css'
 
 const SProduct = () => {
 

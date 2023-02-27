@@ -6,12 +6,12 @@ export const products = [
         price: 849,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, dolor nulla! Pariatur commodi est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/strat1/s1.png",
+        img: "images/strat1/s1.png",
         images: [
-            "images/products/strat1/s1.png",
-            "images/products/strat1/s2.png",
-            "images/products/strat1/s3.png",
-            "images/products/strat1/s4.png"
+            "images/strat1/s1.png",
+            "images/strat1/s2.png",
+            "images/strat1/s3.png",
+            "images/strat1/s4.png"
         ],
         rating: 5
     },
@@ -22,12 +22,12 @@ export const products = [
         price: 1099,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/tele/s1.png",
+        img: "images/tele/s1.png",
         images: [
-            "images/products/tele/s1.png",
-            "images/products/tele/s2.png",
-            "images/products/tele/s3.png",
-            "images/products/tele/s4.png"
+            "images/tele/s1.png",
+            "images/tele/s2.png",
+            "images/tele/s3.png",
+            "images/tele/s4.png"
         ],
         rating: 4
     },
@@ -38,12 +38,12 @@ export const products = [
         price: 1299,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar6.png",
+        img: "images/guitar6.png",
         images: [
-            "images/products/sg/s1.png",
-            "images/products/sg/s2.png",
-            "images/products/sg/s3.png",
-            "images/products/sg/s4.png"
+            "images/sg/s1.png",
+            "images/sg/s2.png",
+            "images/sg/s3.png",
+            "images/sg/s4.png"
         ],
         rating: 4
     },
@@ -54,7 +54,7 @@ export const products = [
         price: 499,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Acoustic Guitars",
-        img: "images/products/guitar12.png",
+        img: "images/guitar12.png",
         rating: 5
     },
     {
@@ -64,7 +64,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar3.png",
+        img: "images/guitar3.png",
         rating: 4
     },
     {
@@ -74,7 +74,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar4.png",
+        img: "images/guitar4.png",
         rating: 4
     },
     {
@@ -84,7 +84,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar5.png",
+        img: "images/guitar5.png",
         rating: 5
     },
     {
@@ -94,7 +94,7 @@ export const products = [
         price: 199,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar8.png",
+        img: "images/guitar8.png",
         rating: 3
     },
     {
@@ -104,7 +104,7 @@ export const products = [
         price: 1249,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar9.png",
+        img: "images/guitar9.png",
         rating: 5
     },
     {
@@ -114,7 +114,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar1.png",
+        img: "images/guitar1.png",
         rating: 5
     },
     {
@@ -124,7 +124,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar2.png",
+        img: "images/guitar2.png",
         rating: 5
     },
     {
@@ -134,7 +134,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar3.png",
+        img: "images/guitar3.png",
         rating: 5
     },
     {
@@ -143,7 +143,7 @@ export const products = [
         make: "Fender",
         price: 449,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
-        img: "images/products/guitar10.png",
+        img: "images/guitar10.png",
         category: "Acoustic Guitars",
         rating: 5
     },
@@ -153,7 +153,7 @@ export const products = [
         make: "Fender",
         price: 399,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
-        img: "images/products/guitar11.png",
+        img: "images/guitar11.png",
         category: "Acoustic Guitars",
         rating: 5
     },
@@ -164,7 +164,7 @@ export const products = [
         price: 599,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Electric Guitars",
-        img: "images/products/guitar7.png",
+        img: "images/guitar7.png",
         rating: 5
     },
     {
@@ -174,7 +174,7 @@ export const products = [
         price: 12,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Extras",
-        img: "images/products/extras/tuner1.png",
+        img: "images/extras/tuner1.png",
         rating: 5
     },
     {
@@ -184,7 +184,7 @@ export const products = [
         price: 12,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Extras",
-        img: "images/products/extras/tuner2.png",
+        img: "images/extras/tuner2.png",
         rating: 5
     },
     {
@@ -194,7 +194,7 @@ export const products = [
         price: 12,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Extras",
-        img: "images/products/extras/tuner3.png",
+        img: "images/extras/tuner3.png",
         rating: 5
     },
     {
@@ -204,7 +204,7 @@ export const products = [
         price: 12,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Extras",
-        img: "images/products/extras/tuner4.png",
+        img: "images/extras/tuner4.png",
         rating: 5
     },
     {
@@ -214,10 +214,10 @@ export const products = [
         price: 149,
         description: "Lorem, ipsum dolor sit est voluptatibus temporibus quaerat eaque asperiores repudiandae minus debitis corporis. Harum saepe, officiis aperiam mollitia suscipit culpa!",
         category: "Extras",
-        img: "images/products/gator/s1.png",
+        img: "images/gator/s1.png",
         images: [
-            "images/products/gator/s1.png",
-            "images/products/gator/s2.png",
+            "images/gator/s1.png",
+            "images/gator/s2.png",
         ],
         rating: 4
     }

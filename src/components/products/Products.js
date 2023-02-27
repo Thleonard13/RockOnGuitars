@@ -1,8 +1,7 @@
 import React from 'react'
-import { products } from '../Utilities/ProductInfo'
-import ProductCard from './ProductCard'
-import "./Products.css"
-
+import { products } from '../../data/ProductInfo'
+import ProductCard from '../ProductCard'
+import './products.css'
 const Products = (props) => {
   const { title, results } = props;
 

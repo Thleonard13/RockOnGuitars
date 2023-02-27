@@ -1,4 +1,5 @@
 import React from 'react'
+import './footer.css'
 
 const Footer = () => {
   return (
@@ -40,11 +41,11 @@ const Footer = () => {
             <h4>Install App</h4>
             <p>From App Store or Google Play</p>
             <div className="row">
-                <img src={require("../images/pay/app.jpg")}/>
-                <img src={require("../images/pay/play.jpg")}/>
+                <img src={require("./images/app.jpg")}/>
+                <img src={require("./images/play.jpg")}/>
             </div>
             <p>Secured Payment Gateways</p>
-            <img src={require("../images/pay/pay.png")}/>
+            <img src={require("./images/pay.png")}/>
         </div>
         <div className="copyright">
             <p>&copy 2022, HaydenT Designs - Frontend Web Development</p>

@@ -1,7 +1,8 @@
 import React from 'react'
 import BlogPost from './BlogPost'
-import Header from '../../components/Header'
+import Header from '../../components/header/Header'
 import { blogposts } from './BlogPosts'
+import './blog.css'
 
 const Blog = () => {
 
