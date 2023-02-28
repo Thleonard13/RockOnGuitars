@@ -21,7 +21,7 @@ const CartItem = (props) => {
 
   return (
     <div className='item-container'>
-        <img src={require("../" + img)} width={50}/>
+        <img src={require("../../components/products/" + img)} width={50}/>
         <h4>{name}</h4>
         <p>${price}</p>
         <input type="number" value={quantity} min='0' max='10'onChange={() => updateQuantity(props.item)}/>

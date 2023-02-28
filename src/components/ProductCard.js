@@ -5,7 +5,7 @@ import './products/products.css'
 
 const ProductCard = (props) => {
 
-  const modal = document.getElementById('cart-modal');
+  
 
   const { id, name, make, price, img, rating} = props.productInfo;
 
@@ -20,8 +20,11 @@ const ProductCard = (props) => {
     setCartInventory(() => {
         return [...cartInventory, {quantity: 1, ...item}];
     })
-    modal.classList.add('active-modal');
-    modal.classList.remove('closed-modal');
+    const modal = document.querySelector('.item-added');
+    console.log(modal);
+    modal.classList.add('modal-active');
+    setTimeout(() => (modal.classList.remove('modal-active')), 4000);
+    console.log(modal);
   }
 
   return (

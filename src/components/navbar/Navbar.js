@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
+import ItemAdded from '../itemAdded/ItemAdded'
+import { Context } from '../../Context/Context';
 import Logo from './logo.png'
 import './Navbar.css'
 
@@ -8,6 +10,8 @@ const Navbar = () => {
     const bar = document.getElementById('bar');
     const nav = document.getElementById('navbar');
     const close = document.getElementById('close');
+
+    const {cartInventory} = useContext(Context);
 
 
     if (bar) {
@@ -43,6 +47,8 @@ const Navbar = () => {
                 <Link to="/cart"><i className="fas fa-shopping-bag"></i></Link>
                 <i id="bar" className="fas fa-outdent"></i>
             </div>
+            <div className='cart-item-number'>{cartInventory.length}</div>
+            <ItemAdded />
         </section>
     </>
   )

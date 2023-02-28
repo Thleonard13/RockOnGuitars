@@ -25,25 +25,25 @@ const SProduct = () => {
   return (
     <section id="pro-details" className="section-p1">
         <div className="single-pro-image">
-            <img src={require("../../" + activeProduct.img)} width="100%" id="main-img" alt='no image'/>
+            <img src={require("../../components/products/" + activeProduct.img)} width="100%" id="main-img" alt='no image'/>
             <div className="small-img-group">
                 {activeProduct.images && 
                 <>
                 {activeProduct.images[0] && 
                     <div className="small-img-col" onClick={() => toggleProductImg(0)}>
-                        <img src={require("../../" + activeProduct.images[0])} className="small-img" width="100%"/>
+                        <img src={require("../../components/products/" + activeProduct.images[0])} className="small-img" width="100%"/>
                     </div>}
                 {activeProduct.images[1] && 
                     <div className="small-img-col" onClick={() => toggleProductImg(1)}>
-                        <img src={require("../../" + activeProduct.images[1])} className="small-img" width="100%"/>
+                        <img src={require("../../components/products/" + activeProduct.images[1])} className="small-img" width="100%"/>
                     </div>}
                 {activeProduct.images[2] && 
                     <div className="small-img-col" onClick={() => toggleProductImg(2)}>
-                        <img src={require("../../" + activeProduct.images[2])} className="small-img" width="100%"/>
+                        <img src={require("../../components/products/" + activeProduct.images[2])} className="small-img" width="100%"/>
                     </div>}
                 {activeProduct.images[3] && 
                     <div className="small-img-col" onClick={() => toggleProductImg(3)}>
-                        <img src={require("../../" + activeProduct.images[3])} className="small-img" width="100%"/>
+                        <img src={require("../../components/products/" + activeProduct.images[3])} className="small-img" width="100%"/>
                     </div>}
                 </>}
             </div>
