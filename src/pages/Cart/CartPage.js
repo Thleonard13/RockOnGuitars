@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
-import { Context } from '../../Context/Context';
+import { useCart } from '../../Context/CartContext';
 import CartList from './CartList';
+import './cart.css'
 
 const CartPage = () => {
 
-  const {cartInventory} = useContext(Context);
+  const cartInventory = useCart().cartInventory;
 
   return (
     <>
@@ -23,8 +24,12 @@ const CartPage = () => {
           <CartList />
           <h4 className='total'>Total: ${cartInventory.reduce((acc, current) => acc + current.price, 0) }</h4>
         </>}
-        <button>Continue Shopping</button>
-        <button>Check Out</button>
+        <div className="buttons">
+        <a href='/'>
+          <button className='cart-btn'>Continue Shopping</button>
+        </a>
+        <button className='cart-btn' onClick={() =>{alert("Thanks for checking out the site. There is no actual checkout feature :)")}}>Check Out</button>
+        </div>
       </section>
     </>
   )

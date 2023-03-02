@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/header/Header';
 import ContactForm from './ContactForm'
+import './contact.css'
 
 const Contact = () => {
   const headerText = "Let's Talk";

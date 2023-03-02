@@ -1,26 +1,19 @@
 import React, { useContext } from 'react'
-import { Context } from '../../Context/Context'
+import { useCart } from '../../Context/CartContext';
+import { useActiveProduct } from '../../Context/ActiveProductContext';
 import './sProduct.css'
 
 const SProduct = () => {
 
-    const {activeProduct, cartInventory, setCartInventory} = useContext(Context);
-
-    var mainImg = document.getElementById("main-img")
-    var smImg =document.getElementsByClassName('small-img');
+    const cart = useCart();
 
     const toggleProductImg = (idx) => {
+        var mainImg = document.getElementById("main-img")
+        var smImg =document.getElementsByClassName('small-img');
         mainImg.src = smImg[idx].src;
     }
 
-    const addToCart = (item) => {
-        setCartInventory(() => {
-            return [...cartInventory, {quantity: 1, ...activeProduct}];
-        })
-        alert( item.name + " added to cart");
-    }
-
-    console.log(activeProduct);
+    let activeProduct = useActiveProduct();   
 
   return (
     <section id="pro-details" className="section-p1">
@@ -52,8 +45,7 @@ const SProduct = () => {
             <h6>{activeProduct.category}</h6>
             <h4>{activeProduct.name}</h4>
             <h2>${activeProduct.price}</h2>
-            <input type="number"/>
-            <button className="normal" onClick={() => {addToCart(activeProduct)}}>Add To Cart</button>
+            <button className="normal" onClick={()=> {cart.addToCart(activeProduct)}}>Add To Cart</button>
             <h4>Product Details</h4>
             <p>{activeProduct.description}</p>
         </div>

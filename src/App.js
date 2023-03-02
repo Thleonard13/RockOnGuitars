@@ -1,5 +1,5 @@
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home/Home';
 import Shop from './pages/Shop/Shop';
@@ -12,21 +12,18 @@ import Newsletter from './components/newsletter/Newsletter';
 import SProductPage from './pages/SProduct/SProductPage';
 import CartPage from './pages/Cart/CartPage';
 import { products } from './data/ProductInfo';
-import { Context } from './Context/Context';
+import { CartProvider } from './Context/CartContext';
+import { ActiveProductProvider } from './Context/ActiveProductContext';
 import { useState } from 'react';
-import CartModal from './components/CartModal';
 
 
 function App() {
 
-  const [activeProduct, setActiveProduct] = useState(products[0]);
-  const [cartInventory, setCartInventory] = useState([]);
-
   return (
     <>
-      <Context.Provider value={{activeProduct, setActiveProduct, cartInventory, setCartInventory}}>
+      <CartProvider>
+        <ActiveProductProvider>
         <Navbar />
-        <CartModal />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
@@ -39,7 +36,8 @@ function App() {
         </Routes>
         <Newsletter />
         <Footer />
-      </Context.Provider>
+        </ActiveProductProvider>
+      </CartProvider>
     </>
   );
 }

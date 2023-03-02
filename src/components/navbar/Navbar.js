@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import ItemAdded from '../itemAdded/ItemAdded'
-import { Context } from '../../Context/Context';
+import { useCart } from '../../Context/CartContext';
 import Logo from './logo.png'
 import './Navbar.css'
 
@@ -11,8 +11,7 @@ const Navbar = () => {
     const nav = document.getElementById('navbar');
     const close = document.getElementById('close');
 
-    const {cartInventory} = useContext(Context);
-
+    const cartInventory = useCart().cartInventory;
 
     if (bar) {
         bar.addEventListener('click', () => {
@@ -47,7 +46,7 @@ const Navbar = () => {
                 <Link to="/cart"><i className="fas fa-shopping-bag"></i></Link>
                 <i id="bar" className="fas fa-outdent"></i>
             </div>
-            <div className='cart-item-number'>{cartInventory.length}</div>
+            {cartInventory.length > 0 ? <div className='cart-item-number'>{cartInventory.reduce((acc, current) => acc + current.quantity, 0)}</div> : null }
             <ItemAdded />
         </section>
     </>

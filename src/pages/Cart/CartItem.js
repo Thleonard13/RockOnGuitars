@@ -1,33 +1,26 @@
 import React, { useContext } from 'react'
-import { Context } from '../../Context/Context';
+import { useCart } from '../../Context/CartContext';
+import './cart.css'
 
 const CartItem = (props) => {
 
-  const { name, price, img, quantity } = props.item;
+  const { id, name, price, img, quantity } = props.item;
 
-  const { cartInventory, setCartInventory } = useContext(Context)
-
-  const removeItem = thisKey => {
-    setCartInventory(cartInventory.filter(item => {
-      return item.id !== thisKey;
-    }));
-    console.log(cartInventory);
-  }
-
-  const updateQuantity = (item) => {
-    // item.quantity += 1;
-    // console.log(item.quantity);
-  }
+  const cart = useCart();
 
   return (
     <div className='item-container'>
         <img src={require("../../components/products/" + img)} width={50}/>
         <h4>{name}</h4>
         <p>${price}</p>
-        <input type="number" value={quantity} min='0' max='10'onChange={() => updateQuantity(props.item)}/>
-        <button onClick={() => removeItem(props.item.id)}>X</button>
+        <input type="number" defaultValue={quantity} onChange={(e) =>{cart.updateQuantity(e, id)}} min='0' max='10'/>
+        <button className='remove-btn' onClick={() => cart.removeFromCart(id)}>X</button>
     </div>
   )
 }
+
+
+//QUANTITY CHANGE
+// (e) =>{cart.updateQuantity(e.target.value, id)}
 
 export default CartItem

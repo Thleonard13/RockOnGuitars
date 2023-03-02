@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from '../../components/header/Header'
 import Products from '../../components/products/Products'
 import { products } from '../../data/ProductInfo'
+import './shop.css'
 
 const Shop = () => {
 

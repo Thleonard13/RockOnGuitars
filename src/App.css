@@ -47,7 +47,7 @@ p {
     margin: 40px 0;
 }
 
-button.normal {
+button {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
@@ -75,7 +75,7 @@ button.white {
 body {
     width: 100%;
 }
-
+/* 
 #cart-modal{
     width: 60vw;
     height: 80vh;
@@ -86,267 +86,23 @@ body {
     background-color: #fff;
     border: 1px solid #333;
 
-}
+} */
 
-#cart-modal .cart-list{
+/* #cart-modal .cart-list{
     margin: 20px;
     height: 80%;
     background-color: #ddd;
     overflow: scroll;
-}
-
+} */
+/* 
 .active-modal{
     display: initial;
 }
 
 .closed-modal{
     display: none;
-}
+} */
 
-
-
-
-
-
-
-
-
-
-/* SHOP PAGE STYLING */
-
-
-.filters{
-    display: flex;
-    justify-content: center;
-}
-
-.filters button{
-    margin: 20px;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 24px;
-    color: #fff;
-    background-color: #20a1bb;
-    border: none;
-    box-shadow: ;
-    transition: 0.2s;
-}
-
-.filters button:nth-child(2){
-    background-color: rgb(159, 0, 0);
-}
-
-.filters button:nth-child(3){
-    background-color: rgb(255, 140, 0);
-}
-
-.filters button:nth-child(4){
-    background-color: rgb(9, 131, 0);
-}
-
-.filters button:nth-child(5){
-    background-color: rgb(177, 0, 142);
-}
-
-.filters button:hover{
-    background-color: #444;
-    transform: scale(1.1);
-}
-
-#pagination {
-    text-align: center;
-}
-
-#pagination a {
-    text-decoration: none;
-    background: #088178;
-    padding: 15px 20px;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 600;
-}
-
-#pagination a i {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* SINGLE PRODUCT PAGE STYLING */
-
-
-
-/* BLOG PAGE STYLING */
-
-/* ABOUT PAGE STYLING */
-
-#page-header.about-header {
-    background-image: url(pages/Home/images/banner/b1.png);
-}
-
-#about-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#about-head img {
-    width: 40%;
-    height: auto;
-}
-
-#about-head div {
-    width: 40%;
-    padding-left: 40px;
-}
-
-#about-app {
-    text-align: center;
-}
-
-#about-app .video {
-    width: 70%;
-    height: 100%;
-    margin: 30px auto 0 auto;
-}
-
-#about-app .video video {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-/* CONTACT PAGE STYLING */
-
-#contact-details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#contact-details .details {
-    width: 40%;
-}
-
-#contact-details .details span,
-#form-details form span {
-    font-size: 12px;
-}
-
-#contact-details .details h2,
-#form-details form h2 {
-    font-size: 26px;
-    line-height: 35px;
-    padding: 20px 0;
-}
-
-#contact-details .details h3 {
-    font-size: 16px;
-    padding-bottom: 16px;
-}
-
-#contact-details .details li {
-    list-style: none;
-    display: flex;
-    padding: 10px 0;
-}
-
-#contact-details .details i {
-    font-size: 14px;
-    padding-right: 22px;
-}
-
-#contact-details .details p {
-    margin: 0;
-    font-size: 14px;
-}
-
-#contact-details .map {
-    width: 55%;
-    height: 400px;
-}
-
-#contact-details .map iframe {
-    width: 100%;
-    height: 100%;
-}
-
-#form-details {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-    padding: 80px;
-    border: 1px solid #e1e1e1;
-}
-
-#form-details form {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#form-details form input,
-#form-details form textarea {
-    width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border: 1px solid #e1e1e1;
-}
-
-#form-details form button {
-    background-color: #088178;
-    color: #fff;
-}
-
-#form-details .people div {
-    padding-bottom: 25px;
-    display: flex;
-    align-items: flex-start;
-}
-
-#form-details .people div img {
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-    margin-right: 15px;
-}
-
-#form-details .people div p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 25px;
-}
-
-#form-details .people div p span {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-}
-
-/* CART PAGE */
-
-#cart .cart-header{
-    display: grid;
-    grid-template-columns: 100px auto 100px 100px 50px;
-    background-color: #ddd;
-    padding: 20px;
-}
-
-.item-container{ 
-    display: grid;
-    grid-template-columns: 100px auto 100px 100px 50px;
-    align-items: center;
-    margin: 20px 0;
-    padding: 10px;
-    border-bottom: 1px solid #333;
-}
-
-#cart .total{
-    padding: 10px 30px;
-    text-align: end;
-}
 
 @media (max-width: 799px) {
 

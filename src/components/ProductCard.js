@@ -1,31 +1,21 @@
 import React, { useContext} from 'react'
 import { Link } from 'react-router-dom';
-import { Context } from '../Context/Context';
+import { useCart } from '../Context/CartContext';
+import { useUpdateAP } from '../Context/ActiveProductContext';
 import './products/products.css'
 
 const ProductCard = (props) => {
 
-  
+  const cart = useCart();
+  const updateAP = useUpdateAP();
 
   const { id, name, make, price, img, rating} = props.productInfo;
 
-  const { setActiveProduct, cartInventory, setCartInventory } = useContext(Context);
-
   const handleClick = () => {
-    setActiveProduct(props.productInfo);
+    updateAP(props.productInfo);
     window.scrollTo(0, 0);
   }
 
-  const addToCart = (item) => {
-    setCartInventory(() => {
-        return [...cartInventory, {quantity: 1, ...item}];
-    })
-    const modal = document.querySelector('.item-added');
-    console.log(modal);
-    modal.classList.add('modal-active');
-    setTimeout(() => (modal.classList.remove('modal-active')), 4000);
-    console.log(modal);
-  }
 
   return (
     <div className="pro">
@@ -44,7 +34,7 @@ const ProductCard = (props) => {
             <h4>${price}</h4>
         </div>
       </Link>
-      <i className="fas fa-shopping-cart cart" onClick={() => addToCart(props.productInfo)}></i> 
+      <i className="fas fa-shopping-cart cart" onClick={() => {cart.addToCart(props.productInfo)}}></i> 
     </div>
 
   )
